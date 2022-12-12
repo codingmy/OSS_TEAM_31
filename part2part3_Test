@@ -1,0 +1,37 @@
+import cv2
+import getinfo_print_name_not_print_photo as info
+from collections import Counter
+
+check=0
+leng=len(info.new_var)
+cnt = 1
+for i in range(leng):
+    w=info.new_var[i][1]
+    h=info.new_var[i][2] #i번째 사진의 가로, 세로
+    totalArea = w*h
+    if w*h >= info.width*info.height*70/100: # 하나의 객체가 전체 이미지 크기의 70% 이상일 때
+        print('이 사진은', info.new_var[i][0], ' 을(를) 중점으로 찍은 사진이다.') 
+        check=1
+    else:
+        for j in range(leng):
+            if info.next_var[i][0] == info.next_var[j][0] and i!=j:
+                totalArea[i] = totalArea[i]+ info.new_var[j][1]*info.new_var[j][2]
+            
+for i in range(leng):
+    if check==0 and totalArea[i] >= info.width*info.height*70/100:
+
+        # car 또는 bus 또는 truck 또는 traffic light 중 한 종류의 이미지 크기 총합이
+        # 전체 크기의 70% 이상이면, 해당 이미지가 driveway 사진이라고 출력.
+        if info.new_var[i][0] == 'car' or 'bus'or'truck'or'traffic light':
+            print('driveway picture')
+        if info.new_var[i][0] == 'book':
+            print('bookstore picture')
+        if info.new_var[i][0] == 'person'or'bird'or'cat'or'dog'or'horse'or'sheep'or'cow'or'elephant'or'zebra'or'giraffe'or'mouse':
+            print('flock picture')
+        else:
+            print(info.new_var[i][0], 'picture')
+        break
+
+cv2.imshow('Objects', info.img)
+cv2.waitKey()
+cv2.destroyAllWindows()
