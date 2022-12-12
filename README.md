@@ -6,7 +6,7 @@
 - output of image
 ![output_of_image](./output_of_image.JPG)
 - output of determined data of an image
-![output](./output.JPG)
+![output](./output1.JPG)
 ---------
 # packages and version, source code that used
 - YOLO code from professor YOUNGMIN OH, Gachon University and <https://opencv-tutorial.readthedocs.io/en/latest/yolo/yolo.html>
