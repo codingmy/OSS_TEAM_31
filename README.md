@@ -10,16 +10,19 @@
 ---------
 # packages and version, source code that used
 - YOLO code from professor YOUNGMIN OH, Gachon University and <https://opencv-tutorial.readthedocs.io/en/latest/yolo/yolo.html>
-- ‘Coco.names’ from  <https://github.com/pjreddie/darknet/blob/master/data/coco.names>
-- ‘Yolov3.cfg’ from  <https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg>
-- ‘Yolo3.weight’ from  <https://pjreddie.com/media/files/yolov3.weights>
+- ‘coco.names’ from  <https://github.com/pjreddie/darknet/blob/master/data/coco.names>
+- ‘yolov3.cfg’ from  <https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg>
+- ‘yolo3.weights’ from  <https://pjreddie.com/media/files/yolov3.weights>
 
 ------------------------------
 # How to run this program
+
+0. Download 'part1_fin.py', 'part2_3_fin_fin.py', 'coco.names', 'yolov3.cfg', ‘yolo3.weights’ in this repository
+
 1. Make sure put 'part1_fin.py', 'part2_3_fin_fin.py' to same path.
 2. Make sure ‘coco.names’ file path to C://for_anaconda/coco.names
 3. ‘yolov3.cfg’ file path to C://for_anaconda/yolov3.cfg
-4. ‘yolo3.weight’ file path to C://for_anaconda/yolov3.weights
+4. ‘yolo3.weights’ file path to C://for_anaconda/yolov3.weights
 5. Make sure that name image you want to use to ‘image.jpg’
 6. And put the image path to C://for_anaconda/image.jpg
 7. And run 'part2_3_fin.py' file
