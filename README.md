@@ -17,13 +17,13 @@
 ------------------------------
 # How to run this program
 
-0. Download 'part1_fin.py', 'part2_3_fin_fin.py', 'coco.names', 'yolov3.cfg', ‘yolo3.weights’ in this repository
+0. Download **'part1_fin.py', 'part2_3_fin_fin.py', 'coco.names', 'yolov3.cfg', ‘yolo3.weights’** in this repository
 
-1. Make sure put 'part1_fin.py', 'part2_3_fin_fin.py' to same path.
-2. Make sure ‘coco.names’ file path to C://for_anaconda/coco.names
-3. ‘yolov3.cfg’ file path to C://for_anaconda/yolov3.cfg
-4. ‘yolo3.weights’ file path to C://for_anaconda/yolov3.weights
-5. Make sure that name image you want to use to ‘image.jpg’
-6. And put the image path to C://for_anaconda/image.jpg
-7. And run 'part2_3_fin.py' file
+1. Make sure put **'part1_fin.py', 'part2_3_fin_fin.py'** to same path.
+2. Make sure **‘coco.names’** file path to **C://for_anaconda/coco.names**
+3. **‘yolov3.cfg’** file path to **C://for_anaconda/yolov3.cfg**
+4. **‘yolo3.weights’** file path to **C://for_anaconda/yolov3.weights**
+5. Make sure that name image you want to use to **‘image.jpg’**
+6. And put the image path to **C://for_anaconda/image.jpg**
+7. And run **'part2_3_fin.py'** file
 
